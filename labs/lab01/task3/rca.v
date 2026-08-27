@@ -21,7 +21,7 @@ module rca(
   wire c1, c2, c3;
 
   // TODO: your four FA_Gate instances go here.
-  rca FA0 (
+  FA_Gate FA0 (
     .a   (a[0]),
     .b   (b[0]),
     .cin (cin),
@@ -29,7 +29,7 @@ module rca(
     .cout(c1)
   );
 
-  rca FA1 (
+  FA_Gate FA1 (
     .a   (a[1]),
     .b   (b[1]),
     .cin (c1),
@@ -37,7 +37,7 @@ module rca(
     .cout(c2)
   );
 
-  rca FA2 (
+  FA_Gate FA2 (
     .a   (a[2]),
     .b   (b[2]),
     .cin (c2),
@@ -45,7 +45,7 @@ module rca(
     .cout(c3)
   );
 
-  rca FA3 (
+  FA_Gate FA3 (
     .a   (a[3]),
     .b   (b[3]),
     .cin (c3),
