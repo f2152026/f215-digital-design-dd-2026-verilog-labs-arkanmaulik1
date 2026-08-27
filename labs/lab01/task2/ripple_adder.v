@@ -31,7 +31,7 @@ FA_Gate FA0 (
     .cout(c1)
   );
 
-  FA_Gate FA1 (
+FA_Gate FA1 (
     .a   (a[1]),
     .b   (b[1]),
     .cin (c1),
@@ -39,7 +39,7 @@ FA_Gate FA0 (
     .cout(c2)
   );
 
-  FA_Gate FA2 (
+FA_Gate FA2 (
     .a   (a[2]),
     .b   (b[2]),
     .cin (c2),
@@ -47,7 +47,7 @@ FA_Gate FA0 (
     .cout(c3)
   );
 
-  FA_Gate FA3 (
+FA_Gate FA3 (
     .a   (a[3]),
     .b   (b[3]),
     .cin (c3),
