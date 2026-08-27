@@ -24,10 +24,10 @@ module rca64(
   output [63:0] sum,
   output        cout
 );
-  // TODO: your 64-bit ripple-carry structure goes here.
-wire [64:0] c;
-assign c[0] = cin; 
-genvar i;
+  wire [64:0] c;
+  assign c[0] = cin;
+
+  genvar i;
   generate
     for (i = 0; i < 64; i = i + 1) begin : gen_fa
       FA_Gate FA (
@@ -39,9 +39,6 @@ genvar i;
       );
     end
   endgenerate
-  
-assign cout = c[64];
 
-
-
+  assign cout = c[64];
 endmodule
